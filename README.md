@@ -1,5 +1,5 @@
 # Continued Fork of SkBee
-Why did I fork SkBee? Well you see, Shane has recently said he would stop working on SkBee for good for reasons, read his statement [here](https://github.com/ShaneBeee/SkBee/wiki/statement). I have decided I would continue development of SkBee as it is one of the most useful addons in Skript. All future updates will be on this repository until further notice. That being said, there will be a different Spigot link, bstats, and SkUnity Forums link. 
+Why did I fork SkBee? Well you see, Shane has recently said he would stop working on SkBee for reasons, read his statement [here](https://github.com/ShaneBeee/SkBee/wiki/statement). I have decided I would continue development of SkBee as it is one of the most useful addons in Skript. All future updates will be on this repository until further notice. That being said, there will be a different Spigot link, bstats, and SkUnity Forums link. 
 
 # SkBee
 
