@@ -1,9 +1,9 @@
-# Continued Fork of SkBee
-Why did I fork SkBee? Well you see, Shane has recently said he would stop working on SkBee for reasons, read his statement [here](https://github.com/ShaneBeee/SkBee/wiki/statement). I have decided I would continue development of SkBee as it is one of the most useful addons in Skript. All future updates will be on this repository until further notice. That being said, there will be a different Spigot link, bstats, and SkUnity Forums link. 
+# Continued Fork of SkBee (now called SkAssist)
+Why did I fork SkBee? Well you see, Shane has recently said he would stop working on SkBee for reasons, read his statement [here](https://github.com/ShaneBeee/SkBee/wiki/statement). I have decided I would continue development of SkBee as it is one of the most useful addons in Skript. All future updates will be on this repository under a new name called "SkAssist". That being said, there will be a different Spigot link, bstats, and SkUnity Forums link. 
 
-# SkBee
+# SkAssist
 
-**SkBee** is a [**Skript**](https://github.com/SkriptLang/Skript) addon that aims to add more useful elements to Skript.
+**SkAssist** is a [**Skript**](https://github.com/SkriptLang/Skript) addon that aims to add more useful elements to Skript.
 
 ## Elements
 This is only a small list of the many things included
@@ -23,14 +23,6 @@ See the [**Wiki**](https://github.com/ShaneBeee/SkBee/wiki) for more detailed in
 
 ## Docs
 [![SkriptHubViewTheDocs](http://skripthub.net/static/addon/ViewTheDocsButton.png)](http://skripthub.net/docs/?addon=SkBee)
-
-## [**JavaDocs**](https://shanebeee.github.io/docs/SkBee/)
-
-## <ins>OpenSource</ins>
-SkBee is proudly built using JetBrains' IntelliJ IDEA!
-We here at SkBee proudly support open source development with a big thanks to JetBrains for the [open source license](https://jb.gg/OpenSourceSupport).
-
-<img src="https://resources.jetbrains.com/storage/products/company/brand/logos/jb_beam.png" width="200">
 
 ## <ins>Outdated</ins>
 Are you running an <ins>**outdated**</ins> version of Minecraft and looking for an <ins>**outdated**</ins> build of SkBee that will work on your <ins>**outdated**</ins> server? Well look no further, here is a list of <ins>**outdated**</ins> builds of SkBee for your <ins>**outdated**</ins> server.
@@ -52,3 +44,5 @@ If you need SkBee to work on an older version of Skript this is the last version
 [**SkBee 1.12.4**](https://github.com/ShaneBeee/SkBee/releases/tag/1.12.4)
 ### <ins>1.12.2 (and below)</ins>
 [**SkBee 1.10.3**](https://github.com/ShaneBeee/SkBee/releases/tag/1.10.3)
+
+These are older builds of SkBee. We will NOT provide support for them.
