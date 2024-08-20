@@ -1,5 +1,5 @@
 # Continued Fork of SkBee (now called SkAssist)
-Why did I fork SkBee? Well you see, Shane has recently said he would stop working on SkBee for reasons, read his statement [here](https://github.com/ShaneBeee/SkBee/wiki/statement). I have decided I would continue development of SkBee as it is one of the most useful addons in Skript. All future updates will be on this repository under a new name called "SkAssist". That being said, there will be a different Spigot link, bstats, and SkUnity Forums link. 
+Why did I fork SkBee? Well you see, Shane has recently said he would stop working on SkBee for reasons, read his statement [here](https://github.com/ShaneBeee/SkBee/wiki/statement). I have decided that me and others would continue development of SkBee as it is one of the most useful addons in Skript. All future updates will be on this repository under a new name called "SkAssist". That being said, there will be a different Spigot link, bstats, and SkUnity Forums link. 
 
 # SkAssist
 
@@ -19,7 +19,7 @@ This is only a small list of the many things included
 - **GameEvents** use Minecraft's GameEvent system, which was created for Skulk Sensors. This system adds more events to the server than were previously available
 
 ## Wiki
-See the [**Wiki**](https://github.com/ShaneBeee/SkBee/wiki) for more detailed info on syntaxes
+See the [**Wiki**](https://github.com/ShaneBeee/SkBee/wiki) for more detailed info on syntaxes. This uses Shane's Wiki as this is a fork of SkBee.
 
 ## Docs
 [![SkriptHubViewTheDocs](http://skripthub.net/static/addon/ViewTheDocsButton.png)](http://skripthub.net/docs/?addon=SkBee)
