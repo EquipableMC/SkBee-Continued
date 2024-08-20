@@ -74,7 +74,7 @@ public class OtherEvents extends SimpleEvent {
         }, EventValues.TIME_NOW);
 
         // Prepare Anvil Event
-        Skript.registerEvent("Anvil Prepare Event", OtherEvents.class, PrepareAnvilEvent.class, "[skbee] anvil prepare")
+        Skript.registerEvent("Anvil Prepare Event", OtherEvents.class, PrepareAnvilEvent.class, "[skassist] anvil prepare")
             .description("Called when a player attempts to combine 2 items in an anvil.",
                 "'event-slot' represents the result slot, can be used to get or set.")
             .examples("on anvil prepare:",

@@ -66,7 +66,7 @@ public class SecSpawnMinecraftEntity extends EffectSection {
         // Bukkit changed from a Bukkit Consumer to Java Consumer in 1.20.2
         if (Skript.methodExists(RegionAccessor.class, "spawn", Location.class, Class.class, Consumer.class)) {
             Skript.registerSection(SecSpawnMinecraftEntity.class,
-                "(minecraft|mc|skbee|le) spawn [%number% of] %minecraftentitytypes/namespacedkeys/strings% [%directions% %locations%]");
+                "(minecraft|mc|skassist|le) spawn [%number% of] %minecraftentitytypes/namespacedkeys/strings% [%directions% %locations%]");
         }
     }
 

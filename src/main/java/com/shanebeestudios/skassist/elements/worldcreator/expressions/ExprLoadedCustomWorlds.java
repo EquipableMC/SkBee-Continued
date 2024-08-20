@@ -25,7 +25,7 @@ public class ExprLoadedCustomWorlds extends SimpleExpression<World> {
 
     static {
         Skript.registerExpression(ExprLoadedCustomWorlds.class, World.class, ExpressionType.SIMPLE,
-            "[all] loaded (custom|skbee) worlds");
+            "[all] loaded (custom|skassist) worlds");
     }
 
     @SuppressWarnings("NullableProblems")

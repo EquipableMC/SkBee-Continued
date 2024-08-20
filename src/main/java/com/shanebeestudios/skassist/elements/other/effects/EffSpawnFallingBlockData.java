@@ -28,7 +28,7 @@ public class EffSpawnFallingBlockData extends Effect {
 
     static {
         Skript.registerEffect(EffSpawnFallingBlockData.class,
-                "(skbee|le) spawn falling %blockdata% [%directions% %locations%]");
+                "(skassist|le) spawn falling %blockdata% [%directions% %locations%]");
     }
 
     private Expression<BlockData> blockData;

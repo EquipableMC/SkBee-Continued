@@ -42,7 +42,7 @@ public class ExprTabCompletion extends SimpleExpression<String> {
 
     static {
         Skript.registerExpression(ExprTabCompletion.class, String.class, ExpressionType.SIMPLE,
-            "[skbee] tab completion[s] [(of|for) (last:last position|position %-number%)]");
+            "[skassist] tab completion[s] [(of|for) (last:last position|position %-number%)]");
     }
 
     private Expression<Number> position;

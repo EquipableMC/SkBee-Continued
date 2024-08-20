@@ -68,7 +68,7 @@ public class Util {
 
     /**
      * Send an error to admins
-     * <p>Permission required: `skbee.admin`</p>
+     * <p>Permission required: `skassist.admin`</p>
      *
      * @param format  Format of the message
      * @param objects Objects to fill format
