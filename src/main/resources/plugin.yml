@@ -1,22 +1,23 @@
-main: com.shanebeestudios.skbee.SkBee
-name: SkBee
+main: com.shanebeestudios.skassist.SkAssist
+name: SkAssist
 version: '@version@'
 description: "A simple Skript addon to help customize your server to the fullest."
 api-version: '1.13'
 author: ShaneBee
-website: https://github.com/ShaneBeee/SkBee
+contributors: [People who care for SkBee ❤️]
+website: https://github.com/EquipableMC/SkAssist
 depend:
     - Skript
 loadbefore:
     - SkQuery
 commands:
-    skbee:
-        description: Main SkBee command
-        permission: skbee.command
+    skassist:
+        description: Main SkAssist command
+        permission: skassist.command
 permissions:
-    skbee.admin:
+    skassist.admin:
         default: op
         description: Permission to receive error messages
-    skbee.command:
+    skassist.command:
         default: op
-        description: Permission to use SkBee's main command
+        description: Permission to use SkAssist's main command

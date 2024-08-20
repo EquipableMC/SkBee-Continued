@@ -10,7 +10,7 @@ compileJava {
     options.encoding = 'UTF-8'
 }
 
-// SkBee version
+// SkAssist version
 version = '3.6.2'
 def latestJava = 21
 def oldestJava = 17
@@ -84,15 +84,15 @@ processResources {
 
 shadowJar {
     manifest {
-        attributes "Main-Class" : "com.shanebeestudios.skbee.game.GamesMain"
+        attributes "Main-Class" : "com.shanebeestudios.skassist.game.GamesMain"
     }
 
     archiveFileName = project.name + "-" + project.version + ".jar"
-    relocate("de.tr7zw.changeme.nbtapi", "com.shanebeestudios.skbee.api.nbt")
-    relocate("de.tr7zw.annotations", "com.shanebeestudios.skbee.api.nbt.annotations")
-    relocate("fr.mrmicky.fastboard", "com.shanebeestudios.skbee.api.fastboard")
-    relocate("com.shanebeestudios.vf", "com.shanebeestudios.skbee.api.virtualfurnace")
-    relocate("org.bstats", "com.shanebeestudios.skbee.metrics")
+    relocate("de.tr7zw.changeme.nbtapi", "com.shanebeestudios.skassist.api.nbt")
+    relocate("de.tr7zw.annotations", "com.shanebeestudios.skassist.api.nbt.annotations")
+    relocate("fr.mrmicky.fastboard", "com.shanebeestudios.skassist.api.fastboard")
+    relocate("com.shanebeestudios.vf", "com.shanebeestudios.skassist.api.virtualfurnace")
+    relocate("org.bstats", "com.shanebeestudios.skassist.metrics")
     exclude('META-INF/**', 'LICENSE')
 }
 
@@ -107,7 +107,7 @@ publishing {
     publications {
         maven(MavenPublication) {
             groupId 'com.github.ShaneBeee'
-            artifactId 'SkBee'
+            artifactId 'SkAssist'
             version project.version
             artifact shadowJar
             artifact tasks.jar
@@ -124,6 +124,6 @@ javadoc {
         links('https://jd.advntr.dev/api/4.14.0/')
     }
     options.addStringOption('Xdoclint:none', '-quiet')
-    exclude("com/shanebeestudios/skbee/api/listener", "com/shanebeestudios/skbee/elements",
-            "com/shanebeestudios/skbee/api/command", "com/shanebeestudios/skbee/game")
+    exclude("com/shanebeestudios/skassist/api/listener", "com/shanebeestudios/skassist/elements",
+            "com/shanebeestudios/skassist/api/command", "com/shanebeestudios/skassist/game")
 }
