@@ -3,7 +3,7 @@ Why did I fork SkBee? Well you see, Shane has recently said he would stop workin
 
 # SkAssist
 
-**SkAssist** is a [**Skript**](https://github.com/SkriptLang/Skript) addon that aims to add more useful elements to Skript.
+**SkAssist** is a Skript Addon continued fork of [**SkBee**](https://github.com/ShaneBeee/SkBee) that aims to add more useful elements to [**Skript**](https://github.com/SkriptLang/Skript).
 
 ## Elements
 This is only a small list of the many things included
