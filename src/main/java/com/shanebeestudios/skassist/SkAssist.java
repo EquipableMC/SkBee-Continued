@@ -91,8 +91,8 @@ public class SkAssist extends JavaPlugin {
         //pm.registerEvents(new ScriptListener(), this); // Temp removed
     }
 
-    private void loadMetrics() { //6719
-        Metrics metrics = new Metrics(this, 6719);
+    private void loadMetrics() { //23119
+        Metrics metrics = new Metrics(this, 23119);
         metrics.addCustomChart(new SimplePie("skript_version", () -> Skript.getVersion().toString()));
         metrics.addCustomChart(new SimplePie("virtual_furnace", () -> String.valueOf(config.ELEMENTS_VIRTUAL_FURNACE)));
     }
