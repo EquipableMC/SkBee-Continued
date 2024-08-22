@@ -1,9 +1,9 @@
 # Continued Fork of SkBee (now called SkAssist)
-Why did I fork SkBee? Well you see, Shane has recently said he would stop working on SkBee for reasons, read his statement [here](https://github.com/ShaneBeee/SkBee/wiki/statement). I have decided that me and others would continue development of SkBee as it is one of the most useful addons in Skript. All future updates will be on this repository under a new name called "SkAssist". That being said, there will be a different Spigot link, bstats, and SkUnity Forums link. 
+Why did I fork SkBee? Well you see, Shane has recently said he would stop working on SkBee for reasons, read his statement [here](https://github.com/ShaneBeee/SkBee/wiki/statement). I have decided that me and others would continue development of SkBee as it is one of the most useful addons in Skript. All future updates will be on this repository under a new name called "SkAssist". That being said, there will be a different Spigot link, bstats, and SkUnity Forums link. **This is an unofficial fork!!** 
 
 # SkAssist
 
-**SkAssist** is a Skript Addon continued fork of [**SkBee**](https://github.com/ShaneBeee/SkBee) that aims to add more useful elements to [**Skript**](https://github.com/SkriptLang/Skript).
+**SkAssist** is a Skript Addon which is a continued fork of [**SkBee**](https://github.com/ShaneBeee/SkBee) that aims to add more useful elements to [**Skript**](https://github.com/SkriptLang/Skript). (This is an unofficial fork).
 
 ## Elements
 This is only a small list of the many things included
@@ -19,30 +19,7 @@ This is only a small list of the many things included
 - **GameEvents** use Minecraft's GameEvent system, which was created for Skulk Sensors. This system adds more events to the server than were previously available
 
 ## Wiki
-See the [**Wiki**](https://github.com/ShaneBeee/SkBee/wiki) for more detailed info on syntaxes. This uses Shane's Wiki as this is a fork of SkBee.
+See the [**Wiki**](https://github.com/ShaneBeee/SkBee/wiki) for more detailed info on syntaxes. This uses Shane's Wiki as this is an unofficial fork of SkBee.
 
 ## Docs
-[![SkriptHubViewTheDocs](http://skripthub.net/static/addon/ViewTheDocsButton.png)](http://skripthub.net/docs/?addon=SkBee)
-
-## <ins>Outdated</ins>
-Are you running an <ins>**outdated**</ins> version of Minecraft and looking for an <ins>**outdated**</ins> build of SkBee that will work on your <ins>**outdated**</ins> server? Well look no further, here is a list of <ins>**outdated**</ins> builds of SkBee for your <ins>**outdated**</ins> server.
-Keep in mind, these <ins>**outdated**</ins> builds for <ins>**outdated**</ins> servers are not supported and you will not get support/bug fixes, because they're <ins>**outdated**</ins>!
-
-### <ins>Skript 2.6.4 (and below)</ins>
-Due to changes in Skript 2.7's API, SkBee 3.0.0+ will only work on Skript 2.7+
-If you need SkBee to work on an older version of Skript this is the last version that will work:
-[**SkBee 2.18.4**](https://github.com/ShaneBeee/SkBee/releases/tag/2.18.4)
-(Just like any other <ins>**outdated**</ins> build, this one is no longer supported)
-
-### <ins>1.18.2</ins>
-[**SkBee 3.5.9**](https://github.com/ShaneBeee/SkBee/releases/tag/3.5.9)
-### <ins>1.17.1</ins>
-[**SkBee 2.11.0**](https://github.com/ShaneBeee/SkBee/releases/tag/2.11.0)
-### <ins>1.16.5</ins>
-[**SkBee 1.15.3**](https://github.com/ShaneBeee/SkBee/releases/tag/1.15.3)
-### <ins>1.15.2</ins>
-[**SkBee 1.12.4**](https://github.com/ShaneBeee/SkBee/releases/tag/1.12.4)
-### <ins>1.12.2 (and below)</ins>
-[**SkBee 1.10.3**](https://github.com/ShaneBeee/SkBee/releases/tag/1.10.3)
-
-These are older builds of SkBee. We will NOT provide support for them.
+Coming Soon
