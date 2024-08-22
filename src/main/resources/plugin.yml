@@ -1,10 +1,9 @@
-main: com.shanebeestudios.skassist.SkAssist
+main: site.equipable.skassist.SkAssist
 name: SkAssist
 version: '@version@'
 description: "A simple Skript addon to help customize your server to the fullest."
 api-version: '1.13'
-author: ShaneBee
-contributors: [People who care for SkBee ❤️]
+Author: Equipable
 website: https://github.com/EquipableMC/SkAssist
 depend:
     - Skript
