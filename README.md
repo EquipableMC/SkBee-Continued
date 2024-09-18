@@ -21,5 +21,5 @@ This is only a small list of the many things included
 See the [**Wiki**](https://web.archive.org/web/20240910012111/https://github.com/ShaneBeee/SkBee/wiki) for more detailed info on syntaxes. This uses Shane's Wiki as this is just a fork.
 
 ## Docs
-> SkriptHub
+SkriptHub
 Since Shane removed SkBee docs from SkriptHub, there is a different way to view them **for now**. Simply [click here](https://web.archive.org/web/20240913065946/https://skripthub.net/docs/) then filter by SkBee. 
