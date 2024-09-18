@@ -1,10 +1,10 @@
-# Welcome to SkAssist
+# Welcome to SkBee
 
 settings:
     # Enable this if you would like to see more verbose debug messages
     debug: false
 
-    # Enable this to automatically check for SkAssist updates
+    # Enable this to automatically check for SkBee updates
     # Disable this if you do not want to check for updates, or it takes too long/has issues checking
     update-checker:
         # Whether or not to check for updates
