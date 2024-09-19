@@ -5,7 +5,7 @@ Why did I fork SkBee? Well you see, Shane has recently said he would stop workin
 **SkBee-Continued** is a Skript Addon which is a continued fork of [**SkBee**](https://github.com/ShaneBeee/SkBee) that aims to add more useful elements to [**Skript**](https://github.com/SkriptLang/Skript).
 
 # State of SkBee 
-Shane has made the github public again, but archived the repository. He is no longer continuing SkBee. This fork simply just updates SkBee. If you want a fork that will be updated with new features and such, go to Fusezion's [SkImagine](https://github.com/Fusezion/SkImagine) addon here.
+Shane has made the github public again, but archived the repository. He is no longer continuing SkBee. This fork simply just updates SkBee. If you want a fork that will be updated with new features and such, go to Fusezion's [SkImagine](https://github.com/Fusezion/SkImagine) addon here for more information.
 
 ## Elements
 This is only a small list of the many things included
