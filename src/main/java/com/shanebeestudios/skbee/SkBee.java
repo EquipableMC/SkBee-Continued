@@ -92,7 +92,7 @@ public class SkBee extends JavaPlugin {
     }
 
     private void loadMetrics() { //6719
-        Metrics metrics = new Metrics(this, 6719);
+        Metrics metrics = new Metrics(this, 23443);
         metrics.addCustomChart(new SimplePie("skript_version", () -> Skript.getVersion().toString()));
         metrics.addCustomChart(new SimplePie("virtual_furnace", () -> String.valueOf(config.ELEMENTS_VIRTUAL_FURNACE)));
     }
