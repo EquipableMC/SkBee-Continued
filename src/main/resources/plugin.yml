@@ -3,7 +3,7 @@ name: SkBee-Continued
 version: '@version@'
 description: "A simple Skript addon to help customize your server to the fullest."
 api-version: '1.13'
-contributors: ShaneBee, Equipable
+contributors: [ShaneBee, Equipable]
 website: https://github.com/ShaneBeee/SkBee
 depend:
     - Skript
