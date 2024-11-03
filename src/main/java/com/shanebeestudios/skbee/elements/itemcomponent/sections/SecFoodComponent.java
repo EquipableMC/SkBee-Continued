@@ -86,8 +86,6 @@ public class SecFoodComponent extends Section {
             VALIDATIOR.addEntryData(new ExpressionEntryData<>("nutrition", null, false, Number.class));
             VALIDATIOR.addEntryData(new ExpressionEntryData<>("saturation", null, false, Number.class));
             VALIDATIOR.addEntryData(new ExpressionEntryData<>("can always eat", null, true, Boolean.class));
-            VALIDATIOR.addEntryData(new ExpressionEntryData<>("eat time", null, true, Timespan.class));
-            VALIDATIOR.addEntryData(new ExpressionEntryData<>("using converts to", null, true, ItemType.class));
             VALIDATIOR.addSection("effects", true);
             Skript.registerSection(SecFoodComponent.class, "apply food component to %itemtypes%");
         }
@@ -97,8 +95,6 @@ public class SecFoodComponent extends Section {
     private Expression<Number> nutrition;
     private Expression<Number> saturation;
     private Expression<Boolean> canAlwaysEat;
-    private Expression<Timespan> eatTime;
-    private Expression<ItemType> usingConverts;
     private Trigger potionEffectSection;
 
     @SuppressWarnings({"NullableProblems", "unchecked"})
@@ -111,12 +107,6 @@ public class SecFoodComponent extends Section {
         this.nutrition = (Expression<Number>) container.getOptional("nutrition", false);
         this.saturation = (Expression<Number>) container.getOptional("saturation", false);
         this.canAlwaysEat = (Expression<Boolean>) container.getOptional("can always eat", false);
-        this.eatTime = (Expression<Timespan>) container.getOptional("eat time", false);
-        this.usingConverts = (Expression<ItemType>) container.getOptional("using converts to", false);
-        if (this.usingConverts != null && !HAS_CONVERT) {
-            Skript.error("'using converts to' requires Minecraft 1.21+");
-            return false;
-        }
         SectionNode potionEffects = container.getOptional("effects", SectionNode.class, false);
         if (potionEffects != null) {
             this.potionEffectSection = loadCode(potionEffects, "potion effects", FoodComponentApplyEvent.class);
@@ -137,8 +127,6 @@ public class SecFoodComponent extends Section {
         float saturation = saturationNum.floatValue();
 
         boolean canAlwaysEat = this.canAlwaysEat != null ? this.canAlwaysEat.getSingle(event) : false;
-        Timespan eatTime = this.eatTime != null ? this.eatTime.getSingle(event) : null;
-        ItemStack usingConvertsTo = this.usingConverts != null ? this.usingConverts.getSingle(event).getRandom() : null;
 
         for (ItemType itemType : this.items.getArray(event)) {
             ItemMeta itemMeta = itemType.getItemMeta();
@@ -147,10 +135,6 @@ public class SecFoodComponent extends Section {
             food.setNutrition(nutrition);
             food.setSaturation(saturation);
             food.setCanAlwaysEat(canAlwaysEat);
-            if (eatTime != null) food.setEatSeconds((float) eatTime.getTicks() / 20);
-            if (HAS_CONVERT && usingConvertsTo != null) {
-                food.setUsingConvertsTo(usingConvertsTo);
-            }
 
             if (this.potionEffectSection != null) {
                 FoodComponentApplyEvent foodEvent = new FoodComponentApplyEvent(food);

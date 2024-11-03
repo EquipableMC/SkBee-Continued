@@ -58,7 +58,7 @@ public class EffApplyPotion extends Effect {
             Number probNum = this.probability != null ? this.probability.getSingle(event) : null;
             float probability = probNum != null ? MathUtil.clamp(probNum.floatValue(), 0.0F, 1.0F) : 1;
 
-            applyEvent.getComponent().addEffect(effect, probability);
+            // applyEvent.getComponent().addPotionEffect(effect, probability); // disabled until better support is added
         }
     }
 

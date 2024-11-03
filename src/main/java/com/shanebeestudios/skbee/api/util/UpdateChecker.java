@@ -50,7 +50,7 @@ public class UpdateChecker implements Listener {
 
                 Bukkit.getScheduler().runTaskLater(UpdateChecker.this.plugin, () -> getUpdateVersion(true).thenApply(version -> {
                     Util.sendColMsg(player, "&7[&bSk&3Bee&7] update available: &a" + version);
-                    Util.sendColMsg(player, "&7[&bSk&3Bee&7] download at &bhttps://github.com/ShaneBeee/SkBee/releases");
+                    Util.sendColMsg(player, "&7[&bSk&3Bee&7] download at &bhttps://github.com/EquipableMC/SkBee-Continued/releases");
                     return true;
                 }), 30);
             }
@@ -63,7 +63,7 @@ public class UpdateChecker implements Listener {
             Util.logLoading("&cPlugin is not up to date!");
             Util.logLoading(" - Current version: &cv%s", this.pluginVersion);
             Util.logLoading(" - Available update: &av%s", version);
-            Util.logLoading(" - Download available at: https://github.com/ShaneBeee/SkBee/releases");
+            Util.logLoading(" - Download available at: https://github.com/EquipableMC/SkBee-Continued/releases");
             return true;
         }).exceptionally(throwable -> {
             Util.logLoading("&aPlugin is up to date!");
@@ -93,12 +93,12 @@ public class UpdateChecker implements Listener {
         CompletableFuture<Version> future = new CompletableFuture<>();
         if (async) {
             Bukkit.getScheduler().runTaskAsynchronously(this.plugin, () -> {
-                Version lastest = getLastestVersionFromGitHub();
+                Version lastest = getLatestVersionFromGitHub();
                 if (lastest == null) future.cancel(true);
                 future.complete(lastest);
             });
         } else {
-            Version latest = getLastestVersionFromGitHub();
+            Version latest = getLatestVersionFromGitHub();
             if (latest == null) future.cancel(true);
             future.complete(latest);
         }
@@ -106,9 +106,9 @@ public class UpdateChecker implements Listener {
     }
 
     @SuppressWarnings("CallToPrintStackTrace")
-    private @Nullable Version getLastestVersionFromGitHub() {
+    private @Nullable Version getLatestVersionFromGitHub() {
         try {
-            URL url = new URL("https://api.github.com/repos/ShaneBeee/SkBee/releases/latest");
+            URL url = new URL("https://api.github.com/repos/EquipableMC/SkBee-Continued/releases/latest");
             BufferedReader reader = new BufferedReader(new InputStreamReader(url.openStream()));
             JsonObject jsonObject = new Gson().fromJson(reader, JsonObject.class);
             String tag_name = jsonObject.get("tag_name").getAsString();
