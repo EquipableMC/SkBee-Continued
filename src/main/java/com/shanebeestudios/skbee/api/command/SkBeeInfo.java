@@ -30,7 +30,7 @@ public class SkBeeInfo implements TabExecutor {
     @Override
     public boolean onCommand(@NotNull CommandSender sender, @NotNull Command command, @NotNull String label, @NotNull String[] args) {
         if (args.length > 0 && args[0].equalsIgnoreCase("info")) {
-            sendColMsg(sender, "&7--- [&bSkBee Loading Info&7] ---");
+            sendColMsg(sender, "&7--- [&bSkBee-Continued Loading Info&7] ---");
             Util.getDebugs().forEach(debug -> sendColMsg(sender, "- &7" + debug));
             sendColMsg(sender, "&7--- [&bServer Info&7] ---");
             sendColMsg(sender, "&7Server Version: &b" + Bukkit.getVersion());
@@ -38,12 +38,12 @@ public class SkBeeInfo implements TabExecutor {
             sendColMsg(sender, "&7Skript Addons:");
             Skript.getAddons().forEach(addon -> {
                 String name = addon.getName();
-                if (!name.contains("SkBee")) {
+                if (!name.contains("SkBee-Continued")) {
                     sendColMsg(sender, "&7- &b" + name + " v" + addon.plugin.getDescription().getVersion());
                 }
             });
-            sendColMsg(sender, "&7SkBee Version: &b" + desc.getVersion());
-            sendColMsg(sender, "&7SkBee Website: &b" + desc.getWebsite());
+            sendColMsg(sender, "&7SkBee-Continued Version: &b" + desc.getVersion());
+            sendColMsg(sender, "&7SkBee-Continued Website: &b" + desc.getWebsite());
         }
         return true;
     }
