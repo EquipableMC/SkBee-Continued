@@ -34,7 +34,7 @@ body:
 
   - type: input
     attributes:
-      label: SkBee Version
+      label: SkBee-Continued Version
       description: Which version of SkBee-Continued are you using?
       placeholder: |
         Ex: "1.0.0"
