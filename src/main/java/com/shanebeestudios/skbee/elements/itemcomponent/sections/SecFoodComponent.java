@@ -76,13 +76,11 @@ public class SecFoodComponent extends Section {
             throw new IllegalStateException("FoodComponentApplyEvent should never be called");
         }
     }
-
-    private static boolean HAS_CONVERT = false;
+    
     private static final EntryValidator.EntryValidatorBuilder VALIDATIOR = EntryValidator.builder();
 
     static {
         if (Skript.classExists("org.bukkit.inventory.meta.components.FoodComponent")) {
-            HAS_CONVERT = Skript.methodExists(FoodComponent.class, "setUsingConvertsTo", ItemStack.class);
             VALIDATIOR.addEntryData(new ExpressionEntryData<>("nutrition", null, false, Number.class));
             VALIDATIOR.addEntryData(new ExpressionEntryData<>("saturation", null, false, Number.class));
             VALIDATIOR.addEntryData(new ExpressionEntryData<>("can always eat", null, true, Boolean.class));
@@ -95,7 +93,7 @@ public class SecFoodComponent extends Section {
     private Expression<Number> nutrition;
     private Expression<Number> saturation;
     private Expression<Boolean> canAlwaysEat;
-    private Trigger potionEffectSection;
+    //private Trigger potionEffectSection;
 
     @SuppressWarnings({"NullableProblems", "unchecked"})
     @Override
@@ -107,17 +105,17 @@ public class SecFoodComponent extends Section {
         this.nutrition = (Expression<Number>) container.getOptional("nutrition", false);
         this.saturation = (Expression<Number>) container.getOptional("saturation", false);
         this.canAlwaysEat = (Expression<Boolean>) container.getOptional("can always eat", false);
-        SectionNode potionEffects = container.getOptional("effects", SectionNode.class, false);
-        if (potionEffects != null) {
-            this.potionEffectSection = loadCode(potionEffects, "potion effects", FoodComponentApplyEvent.class);
-        }
+        //SectionNode potionEffects = container.getOptional("effects", SectionNode.class, false);
+       // if (potionEffects != null) {
+       //     this.potionEffectSection = loadCode(potionEffects, "potion effects", FoodComponentApplyEvent.class);
+       // }
         return true;
     }
 
     @SuppressWarnings({"NullableProblems"})
     @Override
     protected @Nullable TriggerItem walk(Event event) {
-        Object localVars = Variables.copyLocalVariables(event);
+        //Object localVars = Variables.copyLocalVariables(event);
 
         Number nutritionNum = this.nutrition.getSingle(event);
         Number saturationNum = this.saturation.getSingle(event);
@@ -136,13 +134,13 @@ public class SecFoodComponent extends Section {
             food.setSaturation(saturation);
             food.setCanAlwaysEat(canAlwaysEat);
 
-            if (this.potionEffectSection != null) {
-                FoodComponentApplyEvent foodEvent = new FoodComponentApplyEvent(food);
-                Variables.setLocalVariables(foodEvent, localVars);
-                TriggerItem.walk(this.potionEffectSection, foodEvent);
-                Variables.setLocalVariables(event, Variables.copyLocalVariables(foodEvent));
-                Variables.removeLocals(foodEvent);
-            }
+           // if (this.potionEffectSection != null) {
+            //    FoodComponentApplyEvent foodEvent = new FoodComponentApplyEvent(food);
+             //   Variables.setLocalVariables(foodEvent, localVars);
+                //TriggerItem.walk(this.potionEffectSection, foodEvent);
+             //   Variables.setLocalVariables(event, Variables.copyLocalVariables(foodEvent));
+              //  Variables.removeLocals(foodEvent);
+           // }
 
             itemMeta.setFood(food);
             itemType.setItemMeta(itemMeta);
