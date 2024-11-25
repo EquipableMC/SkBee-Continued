@@ -11,7 +11,7 @@ compileJava {
 }
 
 // SkBee-Continued version
-version = '3.7-beta1'
+version = '3.7-beta2'
 def latestJava = 21
 def oldestJava = 17
 
