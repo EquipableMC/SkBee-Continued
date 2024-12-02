@@ -1,7 +1,7 @@
 main: com.shanebeestudios.skbee.SkBee
 name: SkBee-Continued
 version: '@version@'
-description: "A fork of SkBee-Continued which is a simple Skript addon to help customize your server to the fullest."
+description: "A fork of SkBee which is a simple Skript addon to help customize your server to the fullest."
 api-version: '1.13'
 contributors: [ShaneBee, Equipable]
 website: https://github.com/EquipableMC/SkBee-Continued
