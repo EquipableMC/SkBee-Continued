@@ -5,15 +5,9 @@ import ch.njol.skript.aliases.ItemType;
 import ch.njol.util.StringUtils;
 import com.shanebeestudios.skbee.api.reflection.ReflectionUtils;
 import com.shanebeestudios.skbee.api.util.Util;
-import org.bukkit.Color;
-import org.bukkit.Location;
-import org.bukkit.Material;
-import org.bukkit.Particle;
+import org.bukkit.*;
 import org.bukkit.Particle.DustOptions;
 import org.bukkit.Particle.DustTransition;
-import org.bukkit.Registry;
-import org.bukkit.Vibration;
-import org.bukkit.World;
 import org.bukkit.block.data.BlockData;
 import org.bukkit.entity.Player;
 import org.bukkit.inventory.ItemStack;
@@ -33,6 +27,8 @@ import java.util.Map;
  */
 @SuppressWarnings("CallToPrintStackTrace")
 public class ParticleUtil {
+
+    private static final boolean FIX_PARTICLES = Bukkit.getVersion().contains("1.20.4");
 
     private ParticleUtil() {
     }
@@ -165,7 +161,11 @@ public class ParticleUtil {
         } else {
             for (Player player : players) {
                 assert player != null;
-                player.spawnParticle(particle, location, count, x, y, z, extra, particleData, force);
+                if (FIX_PARTICLES) {
+                    player.spawnParticle(particle, location, count, x, y, z, extra, particleData);
+                } else {
+                    player.spawnParticle(particle, location, count, x, y, z, extra, particleData, force);
+                }
             }
         }
     }
