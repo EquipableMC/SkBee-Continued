@@ -1,3 +1,8 @@
+# DISCONTINUED (READ BELOW)
+I have decided to make the unfortunate decision and discontinue this fork of SkBee. I did not want to do this but with me not having a lot of free time and having to maintain my own addons like [SkEssentials](https://github.com/EquipableMC/SkEssentials), [SkLogs](https://github.com/EquipableMC/SkLogs), and helping maintain [DiSky](https://github.com/DiSkyOrg/DiSky), I just couldn't afford to find the time to run SkBee-Continued. If you want an updated fork of SkBee, you can find it [here](https://github.com/SkriptHub/SkBee) (https://github.com/SkriptHub/SkBee).
+
+
+
 # Continued Fork of SkBee
 Why did I fork SkBee? Well you see, Shane has said he would stop working on SkBee for reasons, read his statement [here](https://www.spigotmc.org/resources/skbee-skript-addon.75839/). I have decided to continue this fork of SkBee as it is a useful plugin. Please note I will **NOT** add anymore features, I am just simply updating it to support latest versions of Minecraft & Skript.
 # SkBee-Continued
